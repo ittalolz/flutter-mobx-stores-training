@@ -24,15 +24,15 @@ class PagamentoModule extends ChildModule {
       ];
 
   @override
-  List<Router> get routers => [
-        Router(Modular.initialRoute, child: (_, args) => PagamentoPage()),
-        Router("/endereco",
+  List<ModularRouter> get routers => [
+        ModularRouter(Modular.initialRoute, child: (_, args) => PagamentoPage()),
+        ModularRouter("/endereco",
             child: (_, args) => DadosEnderecoPage(),
             transition: TransitionType.rightToLeft),
-        Router("/dadosPagamento",
+        ModularRouter("/dadosPagamento",
             child: (_, args) => DadosPagamentoPage(),
             transition: TransitionType.rightToLeft),
-        Router("/sucesso", child: (_, args) => PagamentoSucessoPage()),
+        ModularRouter("/sucesso", child: (_, args) => PagamentoSucessoPage()),
       ];
 
   static Inject get to => Inject<PagamentoModule>.of();

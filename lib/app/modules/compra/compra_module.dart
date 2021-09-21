@@ -11,12 +11,12 @@ class CompraModule extends ChildModule {
       ];
 
   @override
-  List<Router> get routers => [
-        Router(Modular.initialRoute,
+  List<ModularRouter> get routers => [
+        ModularRouter(Modular.initialRoute,
             child: (_, args) => CompraPage(
                   produtoModel: args.data,
                 )),
-        Router("/carrinho",
+        ModularRouter("/carrinho",
             module: CarrinhoModule(), transition: TransitionType.fadeIn),
       ];
 

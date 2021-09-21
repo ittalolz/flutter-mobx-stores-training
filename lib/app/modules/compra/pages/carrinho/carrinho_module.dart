@@ -14,8 +14,8 @@ class CarrinhoModule extends ChildModule {
       ];
 
   @override
-  List<Router> get routers => [
-        Router("/:title",
+  List<ModularRouter> get routers => [
+        ModularRouter("/:title",
             child: (_, args) => CarrinhoPage(title: args.params["title"])),
       ];
 

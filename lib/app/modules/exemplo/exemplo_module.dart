@@ -9,8 +9,8 @@ class ExemploModule extends ChildModule {
       ];
 
   @override
-  List<Router> get routers => [
-        Router(Modular.initialRoute, child: (_, args) => ExemploPage()),
+  List<ModularRouter> get routers => [
+        ModularRouter(Modular.initialRoute, child: (_, args) => ExemploPage()),
       ];
 
   static Inject get to => Inject<ExemploModule>.of();

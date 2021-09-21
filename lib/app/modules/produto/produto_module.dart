@@ -20,8 +20,8 @@ class ProdutoModule extends ChildModule {
       ];
 
   @override
-  List<Router> get routers => [
-        Router("/:nomeLoja/:logo/:idLoja",
+  List<ModularRouter> get routers => [
+        ModularRouter("/:nomeLoja/:logo/:idLoja",
             child: (_, args) => ProdutoPage(
                   nomeDaLoja: args.params["nomeLoja"],
                   id: args.params["idLoja"],

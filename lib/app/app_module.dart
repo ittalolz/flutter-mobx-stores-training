@@ -18,16 +18,16 @@ class AppModule extends MainModule {
       ];
 
   @override
-  List<Router> get routers => [
-        Router(Modular.initialRoute,
+  List<ModularRouter> get routers => [
+        ModularRouter(Modular.initialRoute,
             module: LojaModule(), transition: TransitionType.fadeIn),
-        Router("/login",
+        ModularRouter("/login",
             module: AuthModule(), transition: TransitionType.fadeIn),
-        Router("/produto",
+        ModularRouter("/produto",
             module: ProdutoModule(), transition: TransitionType.rightToLeft),
-        Router("/compra",
+        ModularRouter("/compra",
             module: CompraModule(), transition: TransitionType.fadeIn),
-        Router("/pagamento",
+        ModularRouter("/pagamento",
             module: PagamentoModule(), transition: TransitionType.fadeIn),
       ];
 
