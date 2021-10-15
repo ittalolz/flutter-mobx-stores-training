@@ -11,6 +11,7 @@ class AppWidget extends StatelessWidget {
         primaryColor: Colors.amber,
         accentColor: Colors.yellow,
         backgroundColor: Color(0xffFFF7E4),
+        elevatedButtonTheme: ElevatedButtonThemeData(style: ElevatedButton.styleFrom(primary: Colors.amber, textStyle: TextStyle(fontSize: 20.0, color: Colors.black)))
       ),
       initialRoute: '/',
       onGenerateRoute: Modular.generateRoute,

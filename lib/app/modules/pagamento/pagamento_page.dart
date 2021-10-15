@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 import 'package:htd_loja_store/app/modules/pagamento/models/pagamento_model.dart';
@@ -36,8 +37,8 @@ class _PagamentoPageState
             ),
             Container(
               width: double.infinity,
-              child: RaisedButton(
-                color: Theme.of(context).primaryColor,
+              child: ElevatedButton(
+                //style: ElevatedButton.styleFrom(primary: Theme.of(context).primaryColor),
                 child: Text("Continuar"),
                 onPressed: () {
                   Modular.link
